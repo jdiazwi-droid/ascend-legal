@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ascend — Privacy Policy</title>
+<style>
+  :root { color-scheme: light; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #FFFBF6;
+    color: #241A10;
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 22px 80px; }
+  .eyebrow {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: #8B5E3C;
+  }
+  h1 { font-size: 32px; line-height: 1.15; margin: 8px 0 4px; }
+  .date { color: #7A6350; font-size: 14px; margin-bottom: 28px; }
+  h2 { font-size: 20px; margin: 34px 0 8px; }
+  p { margin: 10px 0; }
+  ul { margin: 10px 0 10px 22px; }
+  li { margin: 6px 0; }
+  .lead {
+    border: 1px solid rgba(139, 94, 60, 0.25); border-radius: 12px;
+    background: rgba(139, 94, 60, 0.06); padding: 14px 16px; margin: 18px 0 6px;
+  }
+  a { color: #8B5E3C; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Ascend — AI Health OS</div>
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective August 26, 2026</p>
+
+  <p>Ascend ("the app") is a personal health and fitness app. This policy
+  explains what data the app handles, where it goes, and what never leaves
+  your phone. It is written to be read, not skimmed past.</p>
+
+  <div class="lead"><strong>The short version:</strong> Ascend has no accounts
+  and no sign-in. Your health data — meals, workouts, weight, check-ins,
+  scores — lives on your device and stays there. The one exception is the
+  coach: when you send the coach a message, that message and a summary of
+  your day's plan are sent to our server and passed to OpenAI to generate the
+  reply. Nothing is sold, nothing is used for advertising, and nothing
+  identifies you personally.</div>
+
+  <h2>Data stored on your device</h2>
+  <p>Everything you put into Ascend is stored locally on your phone: your
+  onboarding answers (goal, meals, training schedule, foods), daily plans and
+  check-offs, hunger and energy check-ins, logged foods, workouts and
+  routines, weight entries, your Health Score history, imported health data
+  files, and your conversations with the coach. None of this is uploaded,
+  synced, or backed up by us. If you delete the app, this data is deleted
+  with it. The in-app "Reset the app" option (Settings) erases it all in
+  place.</p>
+
+  <h2>Data sent when you talk to the coach</h2>
+  <p>To answer you, the app sends to our server (hosted on Supabase) and
+  onward to OpenAI:</p>
+  <ul>
+    <li>your message, and the conversation so far in that chat;</li>
+    <li>a summary of your day as the app understands it: your plan's meals,
+    snacks, and workout (with completion state), portion and macro numbers,
+    recent check-in answers, your weight trend, logged foods, and short
+    traces of your recent coach conversations;</li>
+    <li>a random per-install identifier, used only to rate-limit requests.
+    It is generated on your device, identifies the installation rather than
+    you, and is reset when you reset or reinstall the app.</li>
+  </ul>
+  <p>This data is used only to generate the coach's reply and to protect the
+  service from abuse. We do not build profiles from it, sell it, or use it
+  for advertising. OpenAI processes it as a service provider to generate the
+  response; per OpenAI's API terms, API data is not used to train their
+  models. The app asks for your explicit consent before your first coach
+  message, and the coach does not work without it.</p>
+
+  <h2>Microphone and speech</h2>
+  <p>Voice typing uses your phone's microphone only while you are speaking
+  to the coach, and speech is converted to text on your device by the
+  operating system. Audio is never sent to us. The words appear in your text
+  box, and nothing reaches the coach unless you press send.</p>
+
+  <h2>Camera</h2>
+  <p>The food scanner uses your camera two ways. Barcode and nutrition-label
+  reading happens on your device; those images are never uploaded. If you
+  choose to scan a meal photo, that photo is sent to our server and to
+  OpenAI to identify the food and estimate portions, then discarded — it is
+  not stored by us, and it is covered by the same in-app AI consent as the
+  coach. Nothing is photographed or sent without you pressing the button.</p>
+
+  <h2>Purchases</h2>
+  <p>Ascend+ subscriptions are processed by Apple and managed through
+  RevenueCat, our subscription service provider. We never see your payment
+  details. RevenueCat receives an anonymous app-generated identifier and
+  your purchase state so the app knows a subscription is active — nothing
+  about your health.</p>
+
+  <h2>What we don't do</h2>
+  <p>No accounts. No analytics or tracking SDKs. No advertising. No selling
+  or sharing of personal data. No use of your data to train AI models. No
+  access to your Apple Health data (Ascend reads only files you explicitly
+  import).</p>
+
+  <h2>Children</h2>
+  <p>Ascend is not directed at children under 13, and we do not knowingly
+  collect personal information from children.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Delete the app, or use Settings → "Reset the app". Because we keep no
+  copies of your device data, there is nothing further to request from us.
+  Chat requests are processed transiently to generate replies and are
+  subject to the retention policies of our service providers (Supabase,
+  OpenAI, RevenueCat).</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be posted at this
+  address with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:jdiazwi@gmail.com">jdiazwi@gmail.com</a>.</p>
+</div>
+</body>
+</html>
