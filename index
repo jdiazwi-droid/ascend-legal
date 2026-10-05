@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ascend — Privacy Policy</title>
+<style>
+  :root { color-scheme: light; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #FFFBF6;
+    color: #241A10;
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 22px 80px; }
+  .eyebrow {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: #8B5E3C;
+  }
+  h1 { font-size: 32px; line-height: 1.15; margin: 8px 0 4px; }
+  .date { color: #7A6350; font-size: 14px; margin-bottom: 28px; }
+  h2 { font-size: 20px; margin: 34px 0 8px; }
+  p { margin: 10px 0; }
+  ul { margin: 10px 0 10px 22px; }
+  li { margin: 6px 0; }
+  .lead {
+    border: 1px solid rgba(139, 94, 60, 0.25); border-radius: 12px;
+    background: rgba(139, 94, 60, 0.06); padding: 14px 16px; margin: 18px 0 6px;
+  }
+  a { color: #8B5E3C; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Ascend — Any meal, made to fit.</div>
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective October 5, 2026</p>
+  <p>Ascend ("the app") is a meal app: it makes any meal fit your goal, finds places near you with orders that fit, and helps you log what you eat. This policy explains what data the app handles, where it goes, and what never leaves your phone. It is written to be read, not skimmed past.</p>
+  <div class="lead"><strong>The short version:</strong> Ascend has no accounts and no sign-in. What you log — meals, weight, your goal and targets, your preferences — lives on your device and stays there. A few features need an AI to work: the coach, the meal card, Need an idea, meal scanning, and dish photos. For those, only what that feature needs is sent to our server and passed to OpenAI. Your location never leaves your phone except to Apple's own map search. Nothing is sold, nothing is used for advertising, and nothing identifies you personally.</div>
+  <h2>Data stored on your device</h2>
+  <p>Everything you put into Ascend is stored locally on your phone: your onboarding answers (goal, weight, way of eating, foods you never eat, what you cook with, how many you cook for, when your day starts and ends), your targets, logged foods and meals, leftovers in your fridge, weight entries, saved meal cards and shopping lists, reminder choices, and your conversations with the coach. None of this is uploaded, synced, or backed up by us. If you delete the app, this data is deleted with it. Profile → "Reset the app" erases it all in place.</p>
+  <h2>Data sent to make AI features work</h2>
+  <p>These features send a request to our server (hosted on Supabase), which passes it to OpenAI to produce the answer:</p>
+  <ul><li><strong>The coach</strong> — your message, the conversation so far in that chat, and a summary of your day as the app understands it (what you've logged, your targets and what's left, your weight trend).</li><li><strong>The meal card (Make it)</strong> — the dish you asked for, your goal (lose, maintain or gain), how many servings and how much time you have, what you cook with, your way of eating, and the foods you never want on your plate.</li><li><strong>Need an idea</strong> — your answers to its questions (the meal, the mood, and so on), your way of eating, the foods you never want, and your goal in words. Anything you type there is sent too.</li><li><strong>Meal scanning</strong> — the photo you choose to scan, to identify the food and estimate portions; it is discarded afterwards and not stored by us.</li><li><strong>Dish and place photos</strong> — only the name of a dish (for example "chicken burrito bowl"). Ascend makes one photo per dish with OpenAI's image model and stores it on our server, where every user of the app sees the same photo. A photo never contains anything about you.</li></ul>
+  <p>Every request also carries a random per-install identifier, used only to limit how many requests one phone can make. It is generated on your device, identifies the installation rather than you, and is reset when you reset or reinstall the app.</p>
+  <p>This data is used only to produce the answer and to protect the service from abuse. We do not build profiles from it, sell it, or use it for advertising. OpenAI processes it as our service provider; under OpenAI's API terms, data sent through the API is not used to train their models.</p>
+  <p>Before any of these features is used for the first time, Ascend shows you what is sent and asks you to agree. If you choose Not now, nothing is sent: Need an idea carries on with Ascend's own questions, and photos stay as drawings.</p>
+  <h2>Location (Grab it)</h2>
+  <p>To show places near you, Ascend asks for your location only while you use Grab it. The search for nearby places runs through Apple's own map search on your iPhone (Apple MapKit), under Apple's privacy policy. Your location is never sent to our server or to OpenAI, and it is not stored. If you'd rather not share it, you can type a city or zip code instead.</p>
+  <p><strong>Photos of places.</strong> For a place in the Grab it list, our server asks Google Places for a photo of that business, sending Google the place's name and its map position — the business's position, not yours. The photo Google returns is shown with its credit and is not stored by us. Nothing about you is sent.</p>
+  <h2>Microphone and speech</h2>
+  <p>Voice typing (Home's search bar and the coach) uses the microphone only while you are speaking. Your speech is turned into text by Apple's speech recognition — on your iPhone where it can, otherwise by Apple — under Apple's privacy policy. Audio is never sent to us. The words appear in the box, and nothing goes anywhere until you press go or send.</p>
+  <h2>Camera and photos</h2>
+  <p>Barcode and nutrition-label reading happens on your device; those images are never uploaded. A meal photo you choose to scan is sent as described above. Ascend only reads the one photo you pick from your library.</p>
+  <h2>Reminders and the Home Screen widget</h2>
+  <p>Meal and weigh-in reminders are scheduled by your iPhone itself; nothing is sent to us to deliver them, and there are no push notifications from a server. The Home Screen widget reads your day's meal times from storage shared only between Ascend and its widget, on your phone.</p>
+  <h2>Purchases</h2>
+  <p>Ascend+ subscriptions are processed by Apple and managed through RevenueCat, our subscription service provider. We never see your payment details. RevenueCat receives an anonymous app-generated identifier and your purchase state so the app knows a subscription is active — nothing about your health or your meals.</p>
+  <h2>Support calls</h2>
+  <p>If you choose to call us to report a bug, we use what you tell us only to find and fix the problem and, where we promise one, to extend your Ascend+ membership.</p>
+  <h2>What we don't do</h2>
+  <p>No accounts. No analytics or tracking SDKs. No advertising. No selling or sharing of personal data. No use of your data to train AI models. No access to your Apple Health data.</p>
+  <h2>Children</h2>
+  <p>Ascend is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+  <h2>Deleting your data</h2>
+  <p>Delete the app, or use Profile → "Reset the app". Because we keep no copies of your device data, there is nothing further to request from us. AI requests are processed transiently to produce answers and are subject to the retention policies of our service providers (Supabase, OpenAI, RevenueCat). Dish photos contain no personal data and stay in the shared library.</p>
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be posted at this address with a new effective date.</p>
+  <!-- The business address (Sep 8, 2026): support@ascendhealthos.app,
+       forwarded by Cloudflare Email Routing. Keep this line and the one
+       in privacy-policy.md identical — DEFECT-15 is the two drifting. -->
+  <h2>Contact</h2>
+  <p>Questions about this policy:
+  <a href="mailto:support@ascendhealthos.app">support@ascendhealthos.app</a>.</p>
+</div>
+</body>
+</html>
