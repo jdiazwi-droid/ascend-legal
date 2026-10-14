@@ -34,94 +34,45 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="eyebrow">Ascend — AI Health OS</div>
+  <div class="eyebrow">Ascend — Any meal, made to fit.</div>
   <h1>Privacy Policy</h1>
-  <p class="date">Effective September 8, 2026</p>
-
-  <p>Ascend ("the app") is a personal health and fitness app. This policy
-  explains what data the app handles, where it goes, and what never leaves
-  your phone. It is written to be read, not skimmed past.</p>
-
-  <div class="lead"><strong>The short version:</strong> Ascend has no accounts
-  and no sign-in. Your health data — meals, workouts, weight, check-ins,
-  scores — lives on your device and stays there. The one exception is the
-  coach: when you send the coach a message, that message and a summary of
-  your day's plan are sent to our server and passed to OpenAI to generate the
-  reply. Nothing is sold, nothing is used for advertising, and nothing
-  identifies you personally.</div>
-
+  <p class="date">Effective October 13, 2026</p>
+  <p>Ascend ("the app") is a meal app: it makes any meal fit your goal, finds places near you with orders that fit, and helps you log what you eat. This policy explains what data the app handles, where it goes, and what never leaves your phone. It is written to be read, not skimmed past.</p>
+  <div class="lead"><strong>The short version:</strong> What you log — meals, weight, your goal and targets, your preferences — lives on your device. Signing in is optional: if you sign in with Apple, our server keeps a small account (an ID and the email Apple shares), which you can delete in the app at any time. A few features need an AI to work; for those, only what the feature needs is sent to our server and passed to the AI provider. Your location never leaves your phone except to Apple's own map search. Nothing is sold, nothing is used for advertising, and nothing about your health is attached to your account.</div>
   <h2>Data stored on your device</h2>
-  <p>Everything you put into Ascend is stored locally on your phone: your
-  onboarding answers (goal, meals, training schedule, foods), daily plans and
-  check-offs, hunger and energy check-ins, logged foods, workouts and
-  routines, weight entries, your Health Score history, imported health data
-  files, and your conversations with the coach. None of this is uploaded,
-  synced, or backed up by us. If you delete the app, this data is deleted
-  with it. The in-app "Reset the app" option (Settings) erases it all in
-  place.</p>
-
-  <h2>Data sent when you talk to the coach</h2>
-  <p>To answer you, the app sends to our server (hosted on Supabase) and
-  onward to OpenAI:</p>
-  <ul>
-    <li>your message, and the conversation so far in that chat;</li>
-    <li>a summary of your day as the app understands it: your plan's meals,
-    snacks, and workout (with completion state), portion and macro numbers,
-    recent check-in answers, your weight trend, logged foods, and short
-    traces of your recent coach conversations;</li>
-    <li>a random per-install identifier, used only to rate-limit requests.
-    It is generated on your device, identifies the installation rather than
-    you, and is reset when you reset or reinstall the app.</li>
-  </ul>
-  <p>This data is used only to generate the coach's reply and to protect the
-  service from abuse. We do not build profiles from it, sell it, or use it
-  for advertising. OpenAI processes it as a service provider to generate the
-  response; per OpenAI's API terms, API data is not used to train their
-  models. The app asks for your explicit consent before your first coach
-  message, and the coach does not work without it.</p>
-
+  <p>Everything you put into Ascend is stored locally on your phone: your onboarding answers (goal, weight, way of eating, foods you never eat, what you cook with, when your day starts and ends), your birthday, height and sex, your targets, logged foods and meals, leftovers in your fridge, weight entries, saved recipes and shopping lists, reminder choices, and your conversations with Ascend. None of this is uploaded, synced or backed up by us — signed in or not. If you delete the app, this data is deleted with it. Profile → "Reset the app" erases it all in place.</p>
+  <h2>Your account (optional)</h2>
+  <p>You can use Ascend without an account. If you choose <strong>Sign in with Apple</strong>, Apple confirms who you are and our sign-in service (Supabase Auth, part of our server) creates an account that holds: an account ID, the identifier Apple gives Ascend for you, the email address Apple shares — your real one or Apple's private relay address, your choice in Apple's sheet — and when you signed in. The name Apple shares the first time is kept on your phone only. Nothing you log is attached to your account.</p>
+  <p><strong>Deleting your account:</strong> Profile → "Delete account". Apple asks you to confirm, then our server deletes your account and revokes Ascend's Sign in with Apple access. What is on your phone stays until you reset the app or delete it. You can also email us and we will delete it by hand.</p>
+  <h2>Data sent to make AI features work</h2>
+  <p>These features send a request to our server (hosted on Supabase), which passes it to OpenAI to produce the answer:</p>
+  <ul><li><strong>Asking Ascend (the coach and the meal card's chat)</strong> — your message, the conversation so far, and a summary of your day as the app understands it (what you've logged, your targets and what's left, your weight trend).</li><li><strong>The meal card</strong> — the dish or the craving you typed, your goal (lose, maintain or gain), how many servings and how much time you have, what you cook with, your way of eating, the foods you never want on your plate, and the size the plate should be (its calories and protein, from what is left of today's targets, and how many meals are left).</li><li><strong>Ideas</strong> — your answers to its questions (the meal, the mood, and so on), your way of eating, the foods you never want, and your goal in words. Anything you type there is sent too.</li><li><strong>Meal scanning</strong> — the photo you choose to scan, to identify the food and estimate portions; it is discarded afterwards and not stored by us.</li><li><strong>Capturing a menu</strong> — the photo you take of a menu, and the restaurant's name and map position, to read the dishes on it. The photo is not kept. The dishes read from it are saved for that restaurant so the next person ordering there can see them; nothing about you is saved with them.</li><li><strong>A mood in Grab it</strong> — if you type a mood rather than a dish (for example "something warm"), those words are sent to choose the kinds of places to look for.</li></ul>
+  <p><strong>Dish photos</strong> are made from the name and description of a dish only (for example "chicken burrito bowl"), by OpenAI's or fal.ai's image model, and stored on our server, where every user of the app may see the same photo. A photo never contains anything about you.</p>
+  <p><strong>Food search and barcodes.</strong> What you type in the food search, and the number of a barcode you scan, are looked up through our server in the U.S. Department of Agriculture's FoodData Central database. Nothing about you is sent with them.</p>
+  <p><strong>Restaurant websites.</strong> For a small restaurant in Grab it, our server may read that restaurant's own public website — the address Apple Maps lists for it — to find its menu. Nothing about you is sent.</p>
+  <p>Every request also carries a random per-install identifier, used only to limit how many requests one phone can make. It is generated on your device, identifies the installation rather than you, and is reset when you reset or reinstall the app.</p>
+  <p>This data is used only to produce the answer and to protect the service from abuse. We do not build profiles from it, sell it, or use it for advertising. OpenAI and fal.ai process it as our service providers; under OpenAI's API terms, data sent through the API is not used to train their models.</p>
+  <p>Before these features are used for the first time, Ascend shows you what is sent and asks you to agree. If you choose Not now, nothing is sent.</p>
+  <h2>Location (Grab it)</h2>
+  <p>To show places near you, Ascend asks for your location only while you use Grab it. The search for nearby places runs through Apple's own map search on your iPhone (Apple MapKit), under Apple's privacy policy. Your location is never sent to our server or to OpenAI, and it is not stored. If you'd rather not share it, you can type a city or zip code instead.</p>
   <h2>Microphone and speech</h2>
-  <p>Voice typing uses your phone's microphone only while you are speaking
-  to the coach, and speech is converted to text on your device by the
-  operating system. Audio is never sent to us. The words appear in your text
-  box, and nothing reaches the coach unless you press send.</p>
-
-  <h2>Camera</h2>
-  <p>The food scanner uses your camera two ways. Barcode and nutrition-label
-  reading happens on your device; those images are never uploaded. If you
-  choose to scan a meal photo, that photo is sent to our server and to
-  OpenAI to identify the food and estimate portions, then discarded — it is
-  not stored by us, and it is covered by the same in-app AI consent as the
-  coach. Nothing is photographed or sent without you pressing the button.</p>
-
+  <p>Voice typing (Home's search bar and the chat) uses the microphone only while you are speaking. Your speech is turned into text by Apple's speech recognition — on your iPhone where it can, otherwise by Apple — under Apple's privacy policy. Audio is never sent to us. The words appear in the box, and nothing goes anywhere until you press go or send.</p>
+  <h2>Camera and photos</h2>
+  <p>Barcode and nutrition-label reading happens on your device; those images are never uploaded (only a barcode's number is looked up, as above). A meal or menu photo you choose to send is handled as described above. Ascend only reads the one photo you pick from your library.</p>
+  <h2>Reminders and the Home Screen widget</h2>
+  <p>Meal, weigh-in and free-trial reminders are scheduled by your iPhone itself; nothing is sent to us to deliver them, and there are no push notifications from a server. The Home Screen widget reads your day's meal times from storage shared only between Ascend and its widget, on your phone.</p>
   <h2>Purchases</h2>
-  <p>Ascend+ subscriptions are processed by Apple and managed through
-  RevenueCat, our subscription service provider. We never see your payment
-  details. RevenueCat receives an anonymous app-generated identifier and
-  your purchase state so the app knows a subscription is active — nothing
-  about your health.</p>
-
+  <p>Ascend+ subscriptions are processed by Apple and managed through RevenueCat, our subscription service provider. We never see your payment details. RevenueCat receives an anonymous app-generated identifier and your purchase state so the app knows a subscription is active — nothing about your health or your meals, and not your account email.</p>
+  <h2>Support</h2>
+  <p>If you contact us to report a problem, we use what you tell us only to find and fix it and, where we promise one, to extend your Ascend+ membership.</p>
   <h2>What we don't do</h2>
-  <p>No accounts. No analytics or tracking SDKs. No advertising. No selling
-  or sharing of personal data. No use of your data to train AI models. No
-  access to your Apple Health data (Ascend reads only files you explicitly
-  import).</p>
-
+  <p>No analytics or tracking SDKs. No advertising. No selling or sharing of personal data. No use of your data to train AI models. No access to your Apple Health data. No copy of what you log on our server.</p>
   <h2>Children</h2>
-  <p>Ascend is not directed at children under 13, and we do not knowingly
-  collect personal information from children.</p>
-
+  <p>Ascend is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
   <h2>Deleting your data</h2>
-  <p>Delete the app, or use Settings → "Reset the app". Because we keep no
-  copies of your device data, there is nothing further to request from us.
-  Chat requests are processed transiently to generate replies and are
-  subject to the retention policies of our service providers (Supabase,
-  OpenAI, RevenueCat).</p>
-
+  <p>On your phone: delete the app, or use Profile → "Reset the app". Your account, if you made one: Profile → "Delete account", or email us. AI requests are processed transiently to produce answers and are subject to the retention policies of our service providers (Supabase, OpenAI, fal.ai, RevenueCat). Dish photos and the menus read for restaurants contain no personal data and stay in the shared library.</p>
   <h2>Changes</h2>
-  <p>If this policy changes, the updated version will be posted at this
-  address with a new effective date.</p>
-
+  <p>If this policy changes, the updated version will be posted at this address with a new effective date.</p>
   <!-- The business address (Sep 8, 2026): support@ascendhealthos.app,
        forwarded by Cloudflare Email Routing. Keep this line and the one
        in privacy-policy.md identical — DEFECT-15 is the two drifting. -->
